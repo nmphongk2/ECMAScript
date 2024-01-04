@@ -1,10 +1,10 @@
 
 fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
 
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(data) {
+    .then(function (data) {
         console.log(data);
         const Population = document.getElementById('Population');
         data.data.forEach(item => {
@@ -22,7 +22,7 @@ fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
             Population.innerHTML += listItem;
         });
     })
-    .catch(function(error) {
+    .catch(function (error) {
         console.log(error);
     });
 
@@ -31,10 +31,10 @@ fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
 
 fetch('https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students')
 
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(data) {
+    .then(function (data) {
         console.log(data);
         const students = document.getElementById('students');
         data.forEach(item => {
@@ -53,6 +53,6 @@ fetch('https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students')
             students.innerHTML += listItem;
         });
     })
-    .catch(function(error) {
+    .catch(function (error) {
         console.log(error);
     });
