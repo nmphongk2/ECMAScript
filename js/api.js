@@ -30,7 +30,8 @@ fetch('http://universities.hipolabs.com/search?country=viet+nam')
         });
     })
     .catch(function (error) {
-        console.log(error);
+        console.error("Phần tử'universities' ở Bài 3");
+       
     });
 
 // Bài 4
@@ -58,7 +59,8 @@ fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
         });
     })
     .catch(function (error) {
-        console.log(error);
+        console.error("Phần tử'Population' ở Bài 4");
+       
     });
 
 fetch('https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students')
@@ -84,8 +86,10 @@ fetch('https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students')
 
             students.innerHTML += listItem;
         });
+
     })
     .catch(function (error) {
-        console.log(error);
+
+        console.error("Phần tử'Population' ở Bài 4");
     });
 
